@@ -6,7 +6,7 @@ navigation_source: docs_nav
 
 The  [rush-schema.json](https://github.com/microsoft/rushstack/blob/master/apps/rush-lib/src/schemas/rush.schema.json) JSON schema defines some additional settings you can specify in **rush.json**.
 
-## projectFolderMinDepth: Controlling folder size
+## projectFolderMinDepth: Controlling folder sizezx
 
 Rush repositories can grow very big.  When you have lots of projects (and maybe several repositories), it's very useful to impose a standard structure that makes it immediately obvious which folders contain buildable projects.  We suggest a convention like this:
 
@@ -149,7 +149,7 @@ After running `rush install`, the **browser-approved-packages.json** file will l
 
 For example, this file is showing that the external dependency **@microsoft/gulp-core-build** was found in the package.json file for an "internal" project (let's say **~/demo/lib1**) but not any "public" project (such as **~/demo/application**).
 
-Rush has no way to detect whether an NPM package is for the browser or not.  Since these are all non-browser files, you must manually move them to the other file **browser-approved-packages.json**.
+Rush has no way to detect whether an NPM package is for the browser or not.  Since these are all non-browser files, you must manually move them to the other file **nonbrowser-approved-packages.json**.
 
 #### How approvals work
 
